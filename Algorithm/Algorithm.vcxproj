@@ -172,6 +172,13 @@
     <ClInclude Include="k18_6_matching_score.h" />
     <ClInclude Include="k18_4_meokbang_live.h" />
     <ClInclude Include="k18_1_open_chat.h" />
+    <ClInclude Include="k19_1.h" />
+    <ClInclude Include="k19_2.h" />
+    <ClInclude Include="k19_3.h" />
+    <ClInclude Include="k19_4.h" />
+    <ClInclude Include="k19_5.h" />
+    <ClInclude Include="k19_6.h" />
+    <ClInclude Include="k19_7.h" />
     <ClInclude Include="pr_42899.h" />
   </ItemGroup>
   <ItemGroup>
