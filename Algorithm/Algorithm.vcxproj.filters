@@ -93,6 +93,9 @@
     <ClInclude Include="k19_7.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="bj_1463.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="README.md" />

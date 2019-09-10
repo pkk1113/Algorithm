@@ -3,67 +3,47 @@
 
 using namespace std;
 
-int N;
-int M;
+void rotate_90(vector<vector<int>>& data) {
+	int S = data.size();
+	int half_S = S >> 1;
 
-void make_roated_90(vector<vector<int>>& old_data,
-					vector<vector<int>>& new_data) {
+	for (int i = 0; i < half_S; i++) {
+		for (int j = 0; j < half_S; j++) {
+			int sj = S - j - 1;
+			int si = S - i - 1;
 
-	for (int i = 0; i < M; i++)
-		for (int j = 0; j < M; j++)
-			new_data[i][j] = old_data[M - 1 - j][i];
+			int tmp = data[i][j];
+			data[i][j] = data[sj][i];
+			data[sj][i] = data[si][sj];
+			data[si][sj] = data[j][si];
+			data[j][si] = tmp;
+		}
+	}
 }
 
 bool solution(vector<vector<int>> key,
 			  vector<vector<int>> lock) {
-	M = key.size();
-	N = lock.size();
-
-	auto key_90 = vector<vector<int>>(M, vector<int>(M));
-	auto key_180 = vector<vector<int>>(M, vector<int>(M));
-	auto key_270 = vector<vector<int>>(M, vector<int>(M));
-
-	make_roated_90(key, key_90);
-	make_roated_90(key_90, key_180);
-	make_roated_90(key_180, key_270);
-
-	vector<pair<int, int>> key_bumps[4];
-	vector<pair<int, int>> lock_holes;
-
-	// 0 키의 돌기 좌표를 모은다.
-	for (int i = 0; i < M; i++)
-		for (int j = 0; j < M; j++)
-			if (key[i][j] == 1)
-				key_bumps[0].emplace_back(i, j);
-
-	// 90 키의 돌기 좌표를 모은다.
-	for (int i = 0; i < M; i++)
-		for (int j = 0; j < M; j++)
-			if (key_90[i][j] == 1)
-				key_bumps[1].emplace_back(i, j);
-
-	// 180 키의 돌기 좌표를 모은다.
-	for (int i = 0; i < M; i++)
-		for (int j = 0; j < M; j++)
-			if (key_180[i][j] == 1)
-				key_bumps[2].emplace_back(i, j);
-
-	// 270 키의 돌기 좌표를 모은다.
-	for (int i = 0; i < M; i++)
-		for (int j = 0; j < M; j++)
-			if (key_270[i][j] == 1)
-				key_bumps[3].emplace_back(i, j);
-
+	int N = lock.size();
+	int M = key.size();
 
 	// 록의 홈 좌표를 모은다.
+	vector<pair<int, int>> lock_holes;
 	for (int i = 0; i < M; i++)
 		for (int j = 0; j < M; j++)
 			if (key[i][j] == 0)
 				lock_holes.emplace_back(i, j);
 
-	// 키의 돌기를 록의 각 홈에 넣고 4번 돌려본다.
+
 	for (int k = 0; k < 4; k++) {
-		for (auto& kb : key_bumps[k]) {
+		// 키의 돌기를 모은다.
+		vector<pair<int, int>> key_bumps;
+		for (int i = 0; i < M; i++)
+			for (int j = 0; j < M; j++)
+				if (key[i][j] == 1)
+					key_bumps.emplace_back(i, j);
+
+		// 키 돌기 하나를 홀 하나에 맞추어 본다.
+		for (auto& kb : key_bumps) {
 			for (auto& lh : lock_holes) {
 				// 열쇠의 좌표를 기준으로
 				bool fail = false;
@@ -77,19 +57,26 @@ bool solution(vector<vector<int>> key,
 						if (x < 0 || y < 0 || x >= N || y >= N)
 							continue;
 
-						if ((lock[y][x] & key[i][j]) == 1) {
-							fail = true;
-							break;
+						// 돌기가 1이고
+						if (key[i][j] == 1) {
+							if (lock[y][x] == 0) {
+								k_cnt++;
+							} else {
+								fail = false;
+							}
 						}
 					}
 				}
 
 				// 실패가 아니고 다 채웠다면
-				if (!fail) {
+				if (k_cnt == key_bumps.size()) {
 					return true;
 				}
 			}
 		}
+
+		// 키를 돌린다.
+		rotate_90(key);
 	}
 
 	return false;
@@ -104,5 +91,6 @@ int main() {
 		{1, 1, 1}, {1, 1, 0}, {1, 0, 1}
 	};
 
-	solution(key, lock);
+	auto r = solution(key, lock);
+	printf("%s\n", r ? "true" : "false");
 }
