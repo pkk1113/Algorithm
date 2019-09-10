@@ -14,11 +14,12 @@ int main() {
 	scanf("%d", &N);
 
 	auto mem = vector<long long>(N + 1, 1);
-	for (int i = 1; i <= N; i++) {
-		for (int j = 1; j < i - 1; j++)
-			mem[i] += mem[j];
+	for (int i = 3; i <= N; i++) {
+		mem[i] = mem[i - 1] + mem[i - 2];
+		// f(i) = 1 + f(i-2)...f(1)		1. 처음 생각한 점화식
+		// f(i-1) = 1 + f(i-3)...f(1)	2. 지금 보니 일부를 치환가능
+		// f(i) = f(i-1) + f(i-2)		3. 아..
 	}
 
-	for (int i = 1; i <= N; i++)
-		printf("%lld\n", mem[i]);
+	printf("%lld\n", mem[N]);
 }
