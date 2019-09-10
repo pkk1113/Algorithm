@@ -120,6 +120,12 @@
     <ClInclude Include="bj_2579.h">
       <Filter>헤더 파일\백준\DP</Filter>
     </ClInclude>
+    <ClInclude Include="bj_1003.h">
+      <Filter>헤더 파일\백준\DP</Filter>
+    </ClInclude>
+    <ClInclude Include="bj_11726.h">
+      <Filter>헤더 파일\백준\DP</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="README.md" />
