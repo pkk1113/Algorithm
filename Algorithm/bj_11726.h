@@ -10,9 +10,9 @@
 int main() {
 	int N;
 	scanf("%d", &N);
-	auto mem = new int[N + 1]{ 0, 1, 2 };
+	int* mem = new int[N + 2]{ 0, 1, 2 };
 	for (int i = 3; i <= N; i++)
-		mem[i] = (mem[i - 1] + mem[i - 2]) % 10007;
+		mem[i] = (mem[i - 1] + mem[i - 2]) % 10007ll;
 	printf("%d\n", mem[N]);
 	delete[] mem;
 }
