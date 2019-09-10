@@ -157,6 +157,7 @@
     <ClInclude Include="bj_1182.h" />
     <ClInclude Include="bj_1463.h" />
     <ClInclude Include="bj_1920.h" />
+    <ClInclude Include="bj_2579.h" />
     <ClInclude Include="bj_9095.h" />
     <ClInclude Include="bk_closest_pair.h" />
     <ClInclude Include="bk_edit_distance_problem.h" />

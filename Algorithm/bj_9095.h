@@ -1,26 +1,26 @@
 // 1, 2, 3 더하기
 
 #ifdef _WIN32
-#pragma warning(disable:4996)
+#pragma warning(disable:4996) // c io
+#pragma warning(disable:6031) // 반환값 사용 안 함
 #endif
 
 #include <cstdio>
-#include <vector>
-#include <algorithm>
+
 using namespace std;
 
 int main() {
-	int N;
-	scanf("%d", &N);
+	int mem[11] = { 0, 1, 2, 4, };
 
-	vector<int> steps(N);
-	for (int i = 0; i < N; i++)
-		scanf("%d", steps.data() + i);
+	for (int i = 4; i <= 10; i++)
+		mem[i] = mem[i - 1] + mem[i - 2] + mem[i - 3];
 
-	vector<int> mem(N + 1);
-	mem[0] = 0;
-	mem[1] = steps[0];
+	int T;
+	scanf("%d", &T);
 
-	for (int i = 2; i <= N; i++) {
+	while (T--) {
+		int N;
+		scanf("%d", &N);
+		printf("%d\n", mem[N]);
 	}
 }
