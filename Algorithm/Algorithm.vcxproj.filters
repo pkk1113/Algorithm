@@ -13,88 +13,109 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="헤더 파일\백준">
+      <UniqueIdentifier>{b5321d9a-e3c7-411a-b573-1eaf8f0b5be1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\카카오">
+      <UniqueIdentifier>{a3e4b263-cfe8-418e-a681-a66114bcce8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\책">
+      <UniqueIdentifier>{038b6fa2-31cf-472e-b841-3d8b0a3173d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\백준\DP">
+      <UniqueIdentifier>{e64c5814-4420-4367-88c7-6cf21cfc80b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\프로그래머스">
+      <UniqueIdentifier>{aeeef60b-b113-4e5f-bcc1-7ed45780fb3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\프로그래머스\DP">
+      <UniqueIdentifier>{c0649a13-d2e4-4b48-a391-774dcb8e85e8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="k18_1_open_chat.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="k18_2_failure_rate.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="k18_3_candidate_key.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="k18_4_meokbang_live.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="k18_5_look_for_load.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="k18_6_matching_score.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="k18_7_block_game.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="pr_42899.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="bj_1182.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\백준</Filter>
     </ClInclude>
     <ClInclude Include="bj_1920.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="bk_closest_pair.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="bk_edit_distance_problem.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="bk_zeroonce_knepsack.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\백준</Filter>
     </ClInclude>
     <ClInclude Include="k17_1.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\카카오</Filter>
     </ClInclude>
     <ClInclude Include="k17_2.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\카카오</Filter>
     </ClInclude>
     <ClInclude Include="k17_3.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\카카오</Filter>
     </ClInclude>
     <ClInclude Include="k17_4.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\카카오</Filter>
     </ClInclude>
     <ClInclude Include="k17_5.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\카카오</Filter>
     </ClInclude>
     <ClInclude Include="k17_6.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\카카오</Filter>
+    </ClInclude>
+    <ClInclude Include="k18_1_open_chat.h">
+      <Filter>헤더 파일\카카오</Filter>
+    </ClInclude>
+    <ClInclude Include="k18_2_failure_rate.h">
+      <Filter>헤더 파일\카카오</Filter>
+    </ClInclude>
+    <ClInclude Include="k18_3_candidate_key.h">
+      <Filter>헤더 파일\카카오</Filter>
+    </ClInclude>
+    <ClInclude Include="k18_4_meokbang_live.h">
+      <Filter>헤더 파일\카카오</Filter>
+    </ClInclude>
+    <ClInclude Include="k18_5_look_for_load.h">
+      <Filter>헤더 파일\카카오</Filter>
+    </ClInclude>
+    <ClInclude Include="k18_6_matching_score.h">
+      <Filter>헤더 파일\카카오</Filter>
+    </ClInclude>
+    <ClInclude Include="k18_7_block_game.h">
+      <Filter>헤더 파일\카카오</Filter>
     </ClInclude>
     <ClInclude Include="k19_1.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\카카오</Filter>
     </ClInclude>
     <ClInclude Include="k19_2.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\카카오</Filter>
     </ClInclude>
     <ClInclude Include="k19_3.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\카카오</Filter>
     </ClInclude>
     <ClInclude Include="k19_4.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\카카오</Filter>
     </ClInclude>
     <ClInclude Include="k19_5.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\카카오</Filter>
     </ClInclude>
     <ClInclude Include="k19_6.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\카카오</Filter>
     </ClInclude>
     <ClInclude Include="k19_7.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\카카오</Filter>
+    </ClInclude>
+    <ClInclude Include="bk_zeroonce_knepsack.h">
+      <Filter>헤더 파일\책</Filter>
+    </ClInclude>
+    <ClInclude Include="bk_closest_pair.h">
+      <Filter>헤더 파일\책</Filter>
+    </ClInclude>
+    <ClInclude Include="bk_edit_distance_problem.h">
+      <Filter>헤더 파일\책</Filter>
     </ClInclude>
     <ClInclude Include="bj_1463.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\백준\DP</Filter>
+    </ClInclude>
+    <ClInclude Include="bj_9095.h">
+      <Filter>헤더 파일\백준\DP</Filter>
+    </ClInclude>
+    <ClInclude Include="pr_42899.h">
+      <Filter>헤더 파일\프로그래머스\DP</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
