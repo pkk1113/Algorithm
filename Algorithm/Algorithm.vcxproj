@@ -155,6 +155,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="bj_1003.h" />
+    <ClInclude Include="bj_1149.h" />
     <ClInclude Include="bj_11726.h" />
     <ClInclude Include="bj_1182.h" />
     <ClInclude Include="bj_1463.h" />
