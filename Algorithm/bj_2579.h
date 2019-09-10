@@ -1,4 +1,4 @@
-// 1, 2, 3 더하기
+// 계단 오르기
 
 #ifdef _WIN32
 #pragma warning(disable:4996) // c io
@@ -18,10 +18,11 @@ int main() {
 	for (int i = 1; i <= N; i++)
 		scanf("%d", steps.data() + i);
 
-	auto mem = vector<int>(N + 1); // [도착] = 최대 점수
+	auto mem = vector<int>(N + 1, 0); // [도착] = 최대 점수
 	for (int i = 1; i <= N; i++) {
-		mem[i] = steps[i] + max(i >= 3 ? mem[i - 3] + steps[i - 1] : 0,
-								i >= 2 ? mem[i - 2] : 0);
+		int way1 = (i >= 2 ? mem[i - 2] : 0);
+		int way2 = (i >= 3 ? mem[i - 3] : 0) + steps[i - 1];
+		mem[i] = steps[i] + max(way1, way2);
 	}
 
 	printf("%d\n", mem[N]);
