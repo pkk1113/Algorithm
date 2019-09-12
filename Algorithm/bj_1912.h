@@ -7,24 +7,21 @@
 
 #include <cstdio>
 #include <vector>
+#include <algorithm>
 using namespace std;
 
 int main() {
 	int N;
 	scanf("%d", &N);
-	auto arr = vector<int>(N);
-	for (auto& el : arr)
-		scanf("%d", &el);
-
-	// [출발][도착] = 점수 
-	int big = 0;
-	for (int i = 1; i < N; i++) { // 출발
-		auto mem = vector<int>(N + 1);
-		for (int j = i + 1; j <= N; j++) { // 도착
-			mem[j] = mem[j - 1] + arr[j - 1];
-			if (mem[j] > big)
-				big = mem[j];
-		}
+	auto arr = vector<int>(N + 1, 0);
+	for (int i = 1; i <= N; i++)
+		scanf("%d", &arr[i]);
+	
+	int big = -1000; // minimum value
+	auto mem = vector<int>(N + 1, 0);
+	for (int i = 1; i <= N; i++) {
+		mem[i] = max(mem[i - 1] + arr[i], arr[i]);
+		big = max(big, mem[i]);
 	}
 
 	printf("%d\n", big);
