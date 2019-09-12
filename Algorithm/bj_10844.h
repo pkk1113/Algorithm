@@ -1,22 +1,28 @@
-// 2×n 타일링 2
-
 #ifdef _WIN32
 #pragma warning(disable:4996) // c io
 #pragma warning(disable:6031) // 반환값 사용 안 함
 #endif
 
-#include <vector>
-using namespace std;
 #include <cstdio>
 
 int main() {
 	int N;
 	scanf("%d", &N);
-	int mem[1001] = { 0, 1, 3, };
 
-	for (int i = 3; i <= N; i++) {
-		mem[i] = (mem[i - 1] + 2 * mem[i - 2]) % 10007;
+	int mem[100][10] = { 0, };
+	for (int s = 0; s <= 9; s++)
+		mem[0][s] = 1;
+
+	for (int len = 1; len < N; len++)
+		for (int s = 0; s <= 9; s++)
+			mem[len][s] = (((s > 0) ? mem[len - 1][s - 1] : 0)
+						   + ((s < 9) ? mem[len - 1][s + 1] : 0)) % 1000000000;
+
+	int ans = 0;
+	for (int s = 1; s <= 9; s++) {
+		ans += mem[N - 1][s];
+		ans %= 1000000000;
 	}
 
-	printf("%d\n", mem[N]);
+	printf("%d\n", ans);
 }
