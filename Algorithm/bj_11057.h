@@ -9,28 +9,28 @@
 #include <vector>
 using namespace std;
 
+inline void op(int& target, int& value) {
+	target = (target + value) % 10007;
+}
+
 int main() {
 	int n;
 	scanf("%d", &n);
 
+	// start - digit
 	auto mem = vector<vector<int>>(10, vector<int>(n + 1, 0));
-	for (int i = 0; i <= 9; i++)
-		mem[i][1] = 1;
 
-	for (int i = 2; i <= n; i++) {
-		for (int j = 0; j <= 9; j++) {
-			for (int k = j; k <= 9; k++) {
-				mem[j][i] += mem[k][i - 1];
-				mem[j][i] %= 10007;
-			}
-		}
-	}
+	for (int s = 0; s <= 9; s++)
+		mem[s][1] = 1;
+
+	for (int d = 2; d <= n; d++)
+		for (int s = 0; s <= 9; s++)
+			for (int k = s; k <= 9; k++)
+				op(mem[s][d], mem[k][d - 1]);
 
 	int ans = 0;
-	for (int i = 0; i <= 9; i++) {
-		ans += mem[i][n];
-		ans %= 10007;
-	}
+	for (int s = 0; s <= 9; s++)
+		op(ans, mem[s][n]);
 
 	printf("%d\n", ans);
 }
