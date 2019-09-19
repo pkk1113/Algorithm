@@ -1,3 +1,2 @@
 ﻿// 여기에 헤더파일 하나만 넣어 주세요.
-
-#include "bj_1546.h"
+#include "bj_simple_problem.h"

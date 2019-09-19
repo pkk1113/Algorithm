@@ -3,6 +3,80 @@
 #pragma warning(disable:6031) // 반환값 사용 안 함
 #endif
 
+// 평균은 넘겠지
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+	int c; // cases
+	int n; // number of student
+	int i; // index
+	int m; // mean
+	int s; // sum of bigger than mean
+
+	int* arr; // 학생들의 점수
+
+	scanf("%d", &c);
+
+	while (c--) {
+		scanf("%d", &n);
+		arr = (int*)malloc(n * sizeof(int));
+		i = 0;
+		m = 0;
+
+		while (i < n) {
+			scanf("%d", arr + i);
+			m += arr[i];
+			i++;
+		}
+
+		m /= n;
+		i = 0;
+		s = 0;
+
+		while (i < n) {
+			if (arr[i] > m)
+				s++;
+			i++;
+		}
+		
+		printf("%.3f%%\n", 100.f * s / n);
+
+		free(arr);
+	}
+}
+
+#ifdef ENDGAME
+// OX퀴즈(8958)
+#include <stdio.h>
+int main() {
+	int t; // test case
+	char arr[80]; // ox array
+	int i; // index
+	int s; // score
+	int b; // bonus
+
+	scanf("%d", &t);
+	while (t--) {
+		scanf("%s", arr);
+
+		i = 0;
+		s = 0;
+		b = 1;
+
+		while (arr[i] != '\0') {
+			if (arr[i++] == 'O') {
+				s += b;
+				b++;
+			} else {
+				b = 1;
+			}
+		}
+
+		printf("%d\n", s);
+	}
+}
+
 // 나머지(3052)
 #include <stdio.h>
 
@@ -25,8 +99,6 @@ int main() {
 	printf("%d", cnt);
 }
 
-
-#ifdef ENDGAME
 // 숫자의 개수(2577)
 #include <stdio.h>
 
