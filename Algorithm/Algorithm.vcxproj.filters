@@ -156,6 +156,12 @@
     <ClInclude Include="bj_9465.h">
       <Filter>헤더 파일\백준\DP</Filter>
     </ClInclude>
+    <ClInclude Include="bj_14501.h">
+      <Filter>헤더 파일\백준\DP</Filter>
+    </ClInclude>
+    <ClInclude Include="bj_2293.h">
+      <Filter>헤더 파일\백준\DP</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="README.md" />
