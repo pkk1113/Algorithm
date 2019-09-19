@@ -156,10 +156,14 @@
   <ItemGroup>
     <ClInclude Include="bj_1003.h" />
     <ClInclude Include="bj_1014.h" />
+    <ClInclude Include="bj_10818.h" />
     <ClInclude Include="bj_10844.h" />
+    <ClInclude Include="bj_10951.h" />
+    <ClInclude Include="bj_10952.h" />
     <ClInclude Include="bj_11052.h" />
     <ClInclude Include="bj_11053.h" />
     <ClInclude Include="bj_11057.h" />
+    <ClInclude Include="bj_1110.h" />
     <ClInclude Include="bj_1149.h" />
     <ClInclude Include="bj_11726.h" />
     <ClInclude Include="bj_11727.h" />
@@ -174,6 +178,8 @@
     <ClInclude Include="bj_2579.h" />
     <ClInclude Include="bj_9095.h" />
     <ClInclude Include="bj_9465.h" />
+    <ClInclude Include="bj_9498.h" />
+    <ClInclude Include="bj_simple_problem.h" />
     <ClInclude Include="bk_closest_pair.h" />
     <ClInclude Include="bk_edit_distance_problem.h" />
     <ClInclude Include="bk_zeroonce_knepsack.h" />

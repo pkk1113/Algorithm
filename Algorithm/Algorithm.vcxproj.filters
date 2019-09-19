@@ -22,9 +22,6 @@
     <Filter Include="헤더 파일\책">
       <UniqueIdentifier>{038b6fa2-31cf-472e-b841-3d8b0a3173d5}</UniqueIdentifier>
     </Filter>
-    <Filter Include="헤더 파일\백준\DP">
-      <UniqueIdentifier>{e64c5814-4420-4367-88c7-6cf21cfc80b8}</UniqueIdentifier>
-    </Filter>
     <Filter Include="헤더 파일\프로그래머스">
       <UniqueIdentifier>{aeeef60b-b113-4e5f-bcc1-7ed45780fb3d}</UniqueIdentifier>
     </Filter>
@@ -108,62 +105,80 @@
     <ClInclude Include="bk_edit_distance_problem.h">
       <Filter>헤더 파일\책</Filter>
     </ClInclude>
-    <ClInclude Include="bj_1463.h">
-      <Filter>헤더 파일\백준\DP</Filter>
-    </ClInclude>
-    <ClInclude Include="bj_9095.h">
-      <Filter>헤더 파일\백준\DP</Filter>
-    </ClInclude>
     <ClInclude Include="pr_42899.h">
       <Filter>헤더 파일\프로그래머스\DP</Filter>
     </ClInclude>
-    <ClInclude Include="bj_2579.h">
-      <Filter>헤더 파일\백준\DP</Filter>
+    <ClInclude Include="bj_9498.h">
+      <Filter>헤더 파일\백준</Filter>
     </ClInclude>
     <ClInclude Include="bj_1003.h">
-      <Filter>헤더 파일\백준\DP</Filter>
-    </ClInclude>
-    <ClInclude Include="bj_11726.h">
-      <Filter>헤더 파일\백준\DP</Filter>
-    </ClInclude>
-    <ClInclude Include="bj_1149.h">
-      <Filter>헤더 파일\백준\DP</Filter>
-    </ClInclude>
-    <ClInclude Include="bj_2193.h">
-      <Filter>헤더 파일\백준\DP</Filter>
+      <Filter>헤더 파일\백준</Filter>
     </ClInclude>
     <ClInclude Include="bj_1014.h">
-      <Filter>헤더 파일\백준\DP</Filter>
+      <Filter>헤더 파일\백준</Filter>
+    </ClInclude>
+    <ClInclude Include="bj_1149.h">
+      <Filter>헤더 파일\백준</Filter>
+    </ClInclude>
+    <ClInclude Include="bj_1463.h">
+      <Filter>헤더 파일\백준</Filter>
     </ClInclude>
     <ClInclude Include="bj_1912.h">
-      <Filter>헤더 파일\백준\DP</Filter>
-    </ClInclude>
-    <ClInclude Include="bj_10844.h">
-      <Filter>헤더 파일\백준\DP</Filter>
-    </ClInclude>
-    <ClInclude Include="bj_11727.h">
-      <Filter>헤더 파일\백준\DP</Filter>
-    </ClInclude>
-    <ClInclude Include="bj_11053.h">
-      <Filter>헤더 파일\백준\DP</Filter>
-    </ClInclude>
-    <ClInclude Include="bj_11052.h">
-      <Filter>헤더 파일\백준\DP</Filter>
+      <Filter>헤더 파일\백준</Filter>
     </ClInclude>
     <ClInclude Include="bj_2133.h">
-      <Filter>헤더 파일\백준\DP</Filter>
+      <Filter>헤더 파일\백준</Filter>
     </ClInclude>
-    <ClInclude Include="bj_9465.h">
-      <Filter>헤더 파일\백준\DP</Filter>
-    </ClInclude>
-    <ClInclude Include="bj_14501.h">
-      <Filter>헤더 파일\백준\DP</Filter>
+    <ClInclude Include="bj_2193.h">
+      <Filter>헤더 파일\백준</Filter>
     </ClInclude>
     <ClInclude Include="bj_2293.h">
-      <Filter>헤더 파일\백준\DP</Filter>
+      <Filter>헤더 파일\백준</Filter>
+    </ClInclude>
+    <ClInclude Include="bj_2579.h">
+      <Filter>헤더 파일\백준</Filter>
+    </ClInclude>
+    <ClInclude Include="bj_9095.h">
+      <Filter>헤더 파일\백준</Filter>
+    </ClInclude>
+    <ClInclude Include="bj_9465.h">
+      <Filter>헤더 파일\백준</Filter>
+    </ClInclude>
+    <ClInclude Include="bj_10844.h">
+      <Filter>헤더 파일\백준</Filter>
+    </ClInclude>
+    <ClInclude Include="bj_11052.h">
+      <Filter>헤더 파일\백준</Filter>
+    </ClInclude>
+    <ClInclude Include="bj_11053.h">
+      <Filter>헤더 파일\백준</Filter>
     </ClInclude>
     <ClInclude Include="bj_11057.h">
-      <Filter>헤더 파일\백준\DP</Filter>
+      <Filter>헤더 파일\백준</Filter>
+    </ClInclude>
+    <ClInclude Include="bj_11726.h">
+      <Filter>헤더 파일\백준</Filter>
+    </ClInclude>
+    <ClInclude Include="bj_11727.h">
+      <Filter>헤더 파일\백준</Filter>
+    </ClInclude>
+    <ClInclude Include="bj_14501.h">
+      <Filter>헤더 파일\백준</Filter>
+    </ClInclude>
+    <ClInclude Include="bj_10952.h">
+      <Filter>헤더 파일\백준</Filter>
+    </ClInclude>
+    <ClInclude Include="bj_10951.h">
+      <Filter>헤더 파일\백준</Filter>
+    </ClInclude>
+    <ClInclude Include="bj_1110.h">
+      <Filter>헤더 파일\백준</Filter>
+    </ClInclude>
+    <ClInclude Include="bj_10818.h">
+      <Filter>헤더 파일\백준</Filter>
+    </ClInclude>
+    <ClInclude Include="bj_simple_problem.h">
+      <Filter>헤더 파일\백준</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
