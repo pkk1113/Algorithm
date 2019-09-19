@@ -180,6 +180,9 @@
     <ClInclude Include="bj_simple_problem.h">
       <Filter>헤더 파일\백준</Filter>
     </ClInclude>
+    <ClInclude Include="bj_1546.h">
+      <Filter>헤더 파일\백준</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="README.md" />
