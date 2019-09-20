@@ -189,6 +189,27 @@
     <ClInclude Include="bj_2231.h">
       <Filter>헤더 파일\백준</Filter>
     </ClInclude>
+    <ClInclude Include="bj_7568.h">
+      <Filter>헤더 파일\백준</Filter>
+    </ClInclude>
+    <ClInclude Include="bj_1018.h">
+      <Filter>헤더 파일\백준</Filter>
+    </ClInclude>
+    <ClInclude Include="bj_1436.h">
+      <Filter>헤더 파일\백준</Filter>
+    </ClInclude>
+    <ClInclude Include="bj_2748.h">
+      <Filter>헤더 파일\백준</Filter>
+    </ClInclude>
+    <ClInclude Include="bj_1904.h">
+      <Filter>헤더 파일\백준</Filter>
+    </ClInclude>
+    <ClInclude Include="bj_1932.h">
+      <Filter>헤더 파일\백준</Filter>
+    </ClInclude>
+    <ClInclude Include="bj_2156.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="README.md" />
