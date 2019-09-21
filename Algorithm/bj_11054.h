@@ -34,7 +34,7 @@ int main() {
 
 	int big = 0;
 
-	for (int i = 1; i < n; i++) {
+	for (int i = 0; i <= n; i++) {
 		auto left = lis(&arr.front(), i, true);
 		auto right = lis(&arr.back(), n - i, false);
 		int len = left.size() + right.size();
