@@ -216,6 +216,15 @@
     <ClInclude Include="bj_1152.h">
       <Filter>헤더 파일\백준</Filter>
     </ClInclude>
+    <ClInclude Include="bj_11654.h">
+      <Filter>헤더 파일\백준</Filter>
+    </ClInclude>
+    <ClInclude Include="bj_11720.h">
+      <Filter>헤더 파일\백준</Filter>
+    </ClInclude>
+    <ClInclude Include="bj_10809.h">
+      <Filter>헤더 파일\백준</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="README.md" />
