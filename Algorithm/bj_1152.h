@@ -6,24 +6,26 @@
 #pragma warning(disable:4018) // unsigned를 int로 변환
 #endif
 
-#include <iostream>
-#include <string>
-#include <sstream>
-using namespace std;
+#include <cstdio>
 
 int main() {
-	string s;
-	getline(cin, s);
-	stringstream ss(s);
-	
+	char word[1000000];
+	char* c = word;
+	bool hit = false;
 	int cnt = 0;
 
-	while (!ss.eof()) {
-		s.clear();
-		ss >> s;
-		if (!s.empty()) {
-			cnt++;
+	scanf("%[^\n]s", word);
+
+	while (*c != '\0') {
+		if (*c != ' ') {
+			if (!hit) {
+				cnt++;
+				hit = true;
+			}
+		} else {
+			hit = false;
 		}
+		c++;
 	}
 
 	printf("%d", cnt);
