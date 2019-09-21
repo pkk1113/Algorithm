@@ -163,6 +163,7 @@
     <ClInclude Include="bj_10952.h" />
     <ClInclude Include="bj_11052.h" />
     <ClInclude Include="bj_11053.h" />
+    <ClInclude Include="bj_11054.h" />
     <ClInclude Include="bj_11057.h" />
     <ClInclude Include="bj_1110.h" />
     <ClInclude Include="bj_1149.h" />
