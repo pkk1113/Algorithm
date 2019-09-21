@@ -32,14 +32,14 @@ int main() {
 		scanf("%d", &el);
 	}
 
-	int big = 0;
+	int big = 1; // n은 최소 1이다.
 
-	for (int i = 0; i <= n; i++) {
+	for (int i = 1; i < n; i++) {
 		auto left = lis(&arr.front(), i, true);
 		auto right = lis(&arr.back(), n - i, false);
 		int len = left.size() + right.size();
 
-		if (!left.empty() && !right.empty() && left.back() == right.back())
+		if (left.back() == right.back())
 			len -= 1;
 
 		big = max(big, len);
