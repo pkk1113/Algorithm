@@ -11,17 +11,20 @@
 #include <algorithm>
 using namespace std;
 
-auto lis(int* s, int n, bool inc = true) {
-	auto mem = vector<int>();
-	while (n--) {
-		auto it = lower_bound(mem.begin(), mem.end(), *s);
-		if (it == mem.end())
-			mem.push_back(*s);
-		else
-			*it = *s;
-		inc ? s++ : s--;
+// s: source, t: target, n: size, d: direction
+void lis(int* s, int* t, int n, int d = 1) {
+	t[0] = 1;
+	for (int i = 1; i < n; i++) {
+		int big = 0;
+		int di = d * i;
+		for (int j = 0; j < i; j++) {
+			int dj = d * j;
+			if (s[dj] < s[di] && big < t[dj]) {
+				big = t[dj];
+			}
+		}
+		t[di] = big + 1;
 	}
-	return mem;
 }
 
 int main() {
@@ -32,17 +35,16 @@ int main() {
 		scanf("%d", &el);
 	}
 
-	int big = 1; // n은 최소 1이다.
+	auto inc = vector<int>(n);
+	auto dec = vector<int>(n);
 
-	for (int i = 1; i < n; i++) {
-		auto left = lis(&arr.front(), i, true);
-		auto right = lis(&arr.back(), n - i, false);
-		int len = left.size() + right.size();
+	lis(&arr.front(), &inc.front(), n, 1);
+	lis(&arr.back(), &dec.back(), n, -1);
+	
+	int big = 1;
 
-		if (left.back() == right.back())
-			len -= 1;
-
-		big = max(big, len);
+	for (int i = 0; i < n; i++) {
+		big = max(big, inc[i] + dec[i] - 1);
 	}
 
 	printf("%d\n", big);
