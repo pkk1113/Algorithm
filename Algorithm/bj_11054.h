@@ -11,28 +11,15 @@
 #include <algorithm>
 using namespace std;
 
-auto lis(int* b, int n) {
+auto lis(int* s, int n, bool inc = true) {
 	auto mem = vector<int>();
 	while (n--) {
-		auto it = lower_bound(mem.begin(), mem.end(), *b);
+		auto it = lower_bound(mem.begin(), mem.end(), *s);
 		if (it == mem.end())
-			mem.push_back(*b);
+			mem.push_back(*s);
 		else
-			*it = *b;
-		b++;
-	}
-	return mem;
-}
-
-auto lis_back(int* e, int n) {
-	auto mem = vector<int>();
-	while (n--) {
-		auto it = lower_bound(mem.begin(), mem.end(), *e);
-		if (it == mem.end())
-			mem.push_back(*e);
-		else
-			*it = *e;
-		e--;
+			*it = *s;
+		inc ? s++ : s--;
 	}
 	return mem;
 }
@@ -47,9 +34,9 @@ int main() {
 
 	int big = 0;
 
-	for (int i = 0; i < n; i++) {
-		auto left = lis(&arr.front(), i);
-		auto right = lis_back(&arr.back(), n - i);
+	for (int i = 1; i < n; i++) {
+		auto left = lis(&arr.front(), i, true);
+		auto right = lis(&arr.back(), n - i, false);
 		int len = left.size() + right.size();
 
 		if (!left.empty() && !right.empty() && left.back() == right.back())
