@@ -169,11 +169,13 @@
     <ClInclude Include="bj_1110.h" />
     <ClInclude Include="bj_1149.h" />
     <ClInclude Include="bj_1152.h" />
+    <ClInclude Include="bj_1157.h" />
     <ClInclude Include="bj_11654.h" />
     <ClInclude Include="bj_11720.h" />
     <ClInclude Include="bj_11726.h" />
     <ClInclude Include="bj_11727.h" />
     <ClInclude Include="bj_1182.h" />
+    <ClInclude Include="bj_1316.h" />
     <ClInclude Include="bj_1436.h" />
     <ClInclude Include="bj_14501.h" />
     <ClInclude Include="bj_1463.h" />
@@ -188,8 +190,13 @@
     <ClInclude Include="bj_2231.h" />
     <ClInclude Include="bj_2293.h" />
     <ClInclude Include="bj_2579.h" />
+    <ClInclude Include="bj_2675.h" />
     <ClInclude Include="bj_2748.h" />
     <ClInclude Include="bj_2798.h" />
+    <ClInclude Include="bj_2908.h" />
+    <ClInclude Include="bj_2941.h" />
+    <ClInclude Include="bj_4991.h" />
+    <ClInclude Include="bj_5622.h" />
     <ClInclude Include="bj_7568.h" />
     <ClInclude Include="bj_9095.h" />
     <ClInclude Include="bj_9465.h" />
